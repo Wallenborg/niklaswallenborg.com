@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NW</title>
+     <link rel="stylesheet" href="css/style.css" />
+     <link rel="icon" type="image/x-icon" href="img/nwdeadpixel.ico">
+</head>
+<body>
+    <hr>
+    <div class="headline">NIKLAS WALLENBORG</div>
+    <p class="txup">( Interdisciplinary artist, with an interest in socialism, 
+        sci-fi, digital culture, space and the apocalypse )<p>
+    <hr>
+     <p><a href="about.html">About</a></p>
+    <p><a href="cv.html">CV</a></p>
+    <p><a href="contact.html">Contact</a></p>
+    <p><a href="https://www.instagram.com/niklaswallenborg/" target="_blank">Instagram</a></p>
+    <p class="pstartpage">Works / Projects</p>
+    <hr>
+    <p><a href="index.html">Back</a></p>
+    <h2>Low-Life, High-Tech</h2>
+    <p>”A good GIF should loop forever”</p>
+    <img src="img/lowlife/lowlife.jpg">
+    <p class="textleft">To see all GIFs press enter.</p>
+    <p><a href="gif.html"><img src="img/lowlife/enter.jpg"></a></p>
+    <p><a href="index.html">Back</a></p>
+    <hr>
+    <p><a href="digitallove.html">Digital Love</a></p>
+    <p><a href="eclipse.html">Virtual Total Eclipse(of the heart)</a></p>
+    <p><a href="kmf.html">Karl Marx Fashion</a></p>
+    <p><a href="loveyou.html">www.i-still-loooove-you.com</a></p>
+    <p><a href="hlht.html">Low-Life, High-Tech</a></p>
+    <p><a href="notears.html">No Tears for Space!</a></p>
+    <p><a href="www.html">The Life and Death of the WWW</a></p>
+    <p><a href="spacefood.html">Recreate the first Meal Eaten in Space</a></p>
+    <p><a href="deadpixel.html">Dead Pixel</a></p>
+    <p><a href="mailshow.html">mail show</a></p>
+    <p><a href="scifi.html">Sci-fi is for Real</a></p>
+    <p><a href="guu.html">going under underground</a></p>
+    <p><a href="warx.html">How to Explain Internet and the Age of Surveillance Capitalism to a Karl Marx bust.</a></p>
+    <p><a href="utopiannow.html">Utopia Now</a></p>
+    <p><a href="god.html">God in the Machine</a></p>
+    <p><a href="sun.html">Everlasting (neverending) Sunrise/Sunset</a></p>
+    <p><a href="outerspace.html">Outer Space as Public Space</a></p>
+    <p><a href="foreseeing.html">The act of Foreseeing</a></p>
+    <p><a href="time.html">Time will tear us apart and draw us together</a></p>
+    <p><a href="endings.html">The Endings</a></p>
+    <p><a href="utopiafantasy.html">Utopia - Our own fantasy will be the Revolution.</a></p>
+    <p><a href="familydinner.html">Sci-fi a Family Dinner</a></p>
+    <p><a href="forest.html">The Word for World Is Forest</a></p>
+    <hr>
+    <!-- Random placing black 10x10px square -->
+     <div class="randomimage">
+            <img src="img/DP.png" id="image" style="position: fixed;" />
+        </div>
+        <script>
+            window.onLoad = Prep();
+            
+            function Prep(){
+                window_Height = window.innerHeight;
+                window_Width = window.innerWidth;
+                
+                image_Element = document.getElementById("image");
+                image_Height = image_Element.clientHeight;
+                image_Width = image_Element.clientWidth;
+                
+                availSpace_V = window_Height - image_Height;
+                availSpace_H = window_Width - image_Width;
+                
+                var changeInterval = 3000;
+                setInterval(moveImage, changeInterval);
+            }
+            
+            function moveImage(){
+                var randNum_V = Math.round(Math.random() * availSpace_V);
+                var randNum_H = Math.round(Math.random() * availSpace_H);
+                
+                image_Element.style.top = randNum_V + "px";
+                image_Element.style.left = randNum_H + "px";
+            }
+        </script>
+</body>
+</html>

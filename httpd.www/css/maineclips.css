@@ -1,0 +1,43 @@
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.eclipse {
+    /* height: 761px;
+    width: 789px; */
+    max-width: 100%;
+}

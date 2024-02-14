@@ -1,0 +1,164 @@
+/*Body - Responsive design?*/
+* {
+  box-sizing: border-box; 
+}
+
+html{
+    margin: 2%;
+    background-color: rgba(0,0,0,0.2);
+    font-family: helvetica neue;
+    text-align: center;
+}
+
+/*Make headline change size according to screen- Responsive design?*/
+ div.headline {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+   div.headline {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.headline {
+    font-size: 50px;
+  }
+}
+/*end code*/
+/*/*Make image change size according to screen- Responsive design?*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*end code*/
+/*text*/
+.booktext{
+    margin-top:-15px;
+    text-align:left;
+    font-size: 50%;
+}
+.booktextabout{
+    text-align:left;
+    font-size: 70%
+}
+.stext{
+    text-align:left;
+    font-size: 50%;
+}
+.textleft{
+    text-align:left;
+    font-family: helvetica neue; 
+}
+.txup{
+   margin-top:-15px;
+   font-size: 90%;
+}
+
+.sectionBook {
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+
+.pstartpage{
+  font-size: 250%; 
+  margin: 20px 0px;
+}
+.button1{
+    border-radius: 24px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 14px 50px;
+    border: none;
+}
+
+.button1:hover {background-color: rgba(0, 0, 0, 0.8)}
+
+.inleft {
+margin-left: 20px;
+}
+
+/*LINKS*/
+.padding{
+    padding-bottom: 50px;
+    text-align:left;
+    font-family: helvetica neue;
+}
+a {
+ font-size: 150%;   
+}
+
+a:link, 
+a:active,
+a:visited,
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+/*javascript style*/
+
+ .randomimage {
+                margin: 0;
+                padding: 0;
+                z-index: 2;
+            }
+
+
+/*slideshow*/
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  height: auto;
+  width: auto;
+  margin: 0 50px;
+  color: black;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

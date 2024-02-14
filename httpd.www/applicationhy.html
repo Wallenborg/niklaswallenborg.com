@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+     <link rel="stylesheet" href="css/style.css" />
+     <link rel="icon" type="image/x-icon" href="img/nwdeadpixel.ico">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+    .imground{
+        border-width:3px;  
+        border-color: rgba(0,0,0,0.2);
+        border-radius: 20px;
+        width: 400px;
+    }
+    .textblock{
+        background-color:ghostwhite;
+        color:black;
+        padding:20px;
+        border-radius: 20px;
+        align-content: center;    
+    }
+</style>
+</head>
+<body>
+    <br>
+    <hr>
+    <br>
+    <h1>Seeing isn´t believing, anymore...</h1>
+    <p><i>We have entered a new era. AI-generated images have become almost photo realistic... Will we no longer be able to tell what's real vs what's fake?</i></p>
+    <img class="imground" src="gif/front.gif"><br><br>
+    <div class="textblock"><h2>Digitalization of Society and the problem with What's Real?</h2>
+    <p class="textleft">As digital technology continues to shape society, deepfakes is causing increasing concern about the authenticity of what we see and hear.
+    </p>
+    <p class="textleft">One of the most significant challenges of the digitalization of society is the problem of what's real. It has become increasingly difficult to know whether the media we consume is authentic or manipulated. 
+    </p>
+    <p class="textleft">Deepfakes are computer-generated media that use artificial intelligence to manipulate images, videos, audio and text to create content that is almost indistinguishable from the real thing.
+    </p>
+    <p class="textleft">Deepfakes can make people appear to do or say things they never did, this can have serious consequences for democracy. This can be used to spread false information or propaganda, manipulate public opinion, and even sway elections. With this technique, it becomes easier to create convincing and believable content that can be difficult to distinguish from reality. 
+    </p>
+    <p class="textleft">This poses a serious threat to the integrity of information and the ability to make informed decisions and can lead to distrust of legitimate sources of information, confusion among voters, and erosion of democratic processes. 
+    </p>
+    <p class="textleft">The potential damage deepfakes can cause to democracy highlights the need for efforts to develop effective tools to detect and mitigate the spread of this type of disinformation. It also emphasizes the importance of educating people about how to critically evaluate the authenticity and credibility of media they consume to help safeguard democratic values.
+    </p>
+    </div>
+    <blockquote class="textleft textblock">”I’m an optimist. I believe that statements like “Bush went AWOL” or “Gore claims to have invented the Internet” can be evaluated and decided pretty much true or false. (the conclusion can be a little more nuanced, but the important thing is that there’s a definitive conclusion.)
+And even crazier, I believe that if there was a fair and accurate system for determining which of these things were lies, people would stop repeating the lies. I would certainly try to. No matter how much I wanted to believe “Dean’s state record sealing was normal” or “global warming does exist”, if a fair system had decided against it, I would stop.<br><br>
+<b>Up With Facts: Finding the Truth in WikiCourt</b> - Aaron Swartz, 2004.</blockquote>
+    <br>
+    <hr>
+    <br>
+    <h4 class="textleft" >Deepfake Example:</h4>
+    <p><a href="https://www.youtube.com/watch?v=cQ54GDm1eL0" target="_blank"><img class="imground" src="img/obama.png"></a></p>
+    <p class="textleft textblock">Many of the most convincing deepfake examples have been created with the help of impersonators that mimick the source’s voice and gestures, just like this video produced by BuzzFeed and comedian Jordan Peele using After Effects CC and FakeApp. Peele’s mouth was pasted over Obama’s, replacing the former president’s jawline with one that followed Peele’s mouth movements. FakeApp was then used to refine the footage through more than 50 hours of automatic processing.</p>
+    <br>
+    <img class="imground" src="img/trump.jpg">
+    <p class="textleft textblock">Images purporting to show Trump getting arrested have gone viral on social media platforms like Twitter. But Trump hasn't been taken into custody—at least not yet...<i>(2023-03-23)</i>. All the images was AI-generated.</p>
+    <br>
+    <img class="imground" src="img/puffercoatpope.0.webp">
+    <br><br>
+    <div class="textleft textblock">
+        <p>Puffer coat pope is fake, but the AI art’s impact is real</p>
+        <p>Pope Francis, but make it fashion. A person playing around with Midjourney, the AI art program, went viral over the weekend for creating an image of the pope wearing a coat that could have been pulled off a Balenciaga runway. The image went viral, not because it was so unrealistically absurd, but because it was believable.</p>
+    </div>
+    <hr>
+    <br>
+        <h2>How To Solve This.</h2>
+    <h4 class="textleft">First step:</h4>
+    <p class="textleft textblock" >A non-digital solution is education from an early age in school - Fact-Checking; Question the content: Could that be true? And when you are not 100 percent sure, do not share, but search for other media reports about it to double-check. Who has published the content and why? <br>This already exists, but I think it is important to inform about this more than we already do.</p>
+    <h4 class="textleft">Next step:</h4>
+    <br>
+    <img class="imground" src="img/appmockup.jpg">
+    <br><br>
+    <div class="textleft textblock">
+        <h3>Is It Real?</h3>
+        <p>An app, where you upload content you want to check the probability of reality and if the content has been modified. This app would provide users with a valuable tool for verifying the credibility of online content, helping to promote informed decision-making and combat misinformation.</p>
+        <p>This will be a two-step check</p>
+        <p><b>Step one:</b> Text, content and context.</p>
+        <p>The user would insert the URL or text of the content they want to check into the app.</p>
+        <h4 style="text-align:center;">There are several ways that an app could work to spot fake or manipulated content:</h4>
+        <dl>
+            <dt><b>Search:</b></dt><br>
+                <dd>The app would search the internet for the same or similar content and identify other websites or sources that have published it.</dd><br>
+            <dt><b>Credibility check:</b></dt><br>
+                <dd>The app would evaluate the credibility of the sources that have published the content. It could use various factors to determine credibility, such as the reputation of the website or organization, the credentials of the author, and the presence of bias or misinformation on the website.</dd><br>
+            <dt><b>Comparison:</b></dt><br>
+                <dd>The app would compare the credibility of the sources that have published the content and highlight any discrepancies or inconsistencies. For example, if a credible news source has published an article, but a lesser-known blog has published the same content with inaccuracies, the app would highlight the differences in credibility.</dd><br>
+            </dl><br><br>
+         <p><b>Step two:</b> Image, video and audio.</p>
+        <p>The user would upload the content they want to check into the app.</p>
+        <h4 style="text-align:center;">There are several ways that an app could work to spot deepfakes:</h4>
+        <dl>
+            <dt><b>Image analysis:</b></dt><br>
+                <dd>Deepfake images are often created by using machine learning algorithms that combine multiple images to create a convincing image of a person. The app would use image analysis techniques to look for inconsistencies in the image, such as differences in lighting, shadows, or pixelation.</dd><br>
+            <dt><b>Facial recognition:</b></dt><br>
+                <dd>Deepfakes often manipulate the facial features of a person to create a convincing image. The app would use facial recognition technology to compare the facial features in the image with those of the original person to detect any inconsistencies.</dd><br>
+            <dt><b>Audio analysis:</b></dt><br>
+                <dd>Deepfake videos often manipulate the audio to create a convincing voiceover or speech. The app would use audio analysis techniques to compare the audio in the video with the original person's voice, looking for differences in tone, inflection, or cadence.</dd><br>
+            <dt><b>Metadata analysis:</b></dt><br>
+                <dd>The app would analyze the metadata associated with the image or video, looking for any discrepancies or inconsistencies in the data that might indicate a deepfake.</dd><br>
+            <dt><b>Machine learning:</b></dt><br>
+                <dd>Deepfakes are created using machine learning algorithms, and The app would also use machine learning to detect them. The app could be trained on a large dataset of deepfakes and real media to identify patterns and detect any anomalies that might indicate a deepfake.</dd><br>
+        </dl>
+        <p>Based on the results of the search and credibility check, the app would provide an assessment of the credibility of the content. This would be i a rating indicating the level of trustworthiness of the content, as well as a summary of the sources that have published it and their credibility.</p><br>
+        <i>However, it is important to note that this app is still a work in progress, and the detection of deepfakes remains a significant challenge in the field of digital media.
+</i>
+    </div>
+    <h4 class="textleft">I had the app test the famous Patterson-Gimlin Bigfoot movie…</h4>
+    <h4 class="textleft">The result : )</h4>
+    <div >
+        <img class="imground" src="gif/isitreal.gif" >
+    </div>
+    <br><br>
+    <div class="textleft textblock" >
+        <p>Introducing <strong>Is It Real?</strong> - the ultimate reality checker. With just a few taps, you can upload content and get an accurate assessment of its reality, our advanced technology will analyze and determine the probability of it being real or fake.</p>
+        <p>Don't be fooled by doctored photos or manipulated videos - know the truth with <strong>Is It Real?</strong> Our app will also check for any modifications made to the content, so you can have peace of mind knowing that what you see is truly what you see.</p>
+        <p>Get started today and experience the power of reality checking at your fingertips. Download <strong>Is It Real?</strong> now and never be misled by fake content again.</p>
+        <p><small>A copy written by ChatGPT</small></p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2>Get the app introduced into society.</h2>
+    <div class="textleft">
+        <p class="textblock">Is always hard to reach out with a new app. As a start and beginning I'm thinking of a collaboration with<a style="font-size: 100%;"  href="https://www.msb.se/" target="_blank">  <strong>MSB</strong> </a><i>(Myndigheten för samhällsskydd och beredskap)</i> and<a style="font-size: 100%;" href="https://internetstiftelsen.se" target="_blank"><strong> Internetstiftelsen</strong></a>. Where they use their channels to inform about the app and how to use it. And hopefully it generate some media coverage about the app</p>
+    </div><br>
+    <h2>And finally is this site real ?:</h2>
+<div class="popup" onclick="myFunction()" style="font-size:260%; background-color:black;color:snow;padding:20px;border-radius: 70px;">Check<span           class="popuptext" id="myPopup">80% REAL</span>
+</div><br><br>
+<div class="stext">    
+    <p>Application task for Hyper Island. Niklas Wallenborg - 2023</p>
+</div>
+<br>
+    <hr>
+    <br>    
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+    
+</body>
+</html>
